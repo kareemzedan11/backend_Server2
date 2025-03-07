@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #1e1e2e;
+	color: #e0e0e0;
+}
+
+/* Sidebar */
+.sidebar {
+	width: 250px;
+	height: 100vh;
+	background: #29293d;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+
+.sidebar h2 {
+	color: #ff9f1c;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	margin: 20px 0;
+}
+
+.sidebar ul li a {
+	color: #e0e0e0;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+	background: #ff9f1c;
+	color: white;
+}
+
+/* Main Content */
+.main-content {
+	margin-left: 270px;
+	padding: 30px;
+	min-height: 100vh;
+}
+
+/* Table Styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th,
+td {
+	padding: 12px;
+	border: 1px solid #444;
+	text-align: left;
+}
+
+th {
+	background: #ff9f1c;
+	color: white;
+}
+
+td {
+	background: #29293d;
+}
+
+/* Buttons */
+button {
+	padding: 8px 12px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.edit-btn {
+	background: #4caf50;
+	color: white;
+}
+
+.delete-btn {
+	background: #e74c3c;
+	color: white;
+}
+
+.edit-btn:hover {
+	background: #45a049;
+}
+
+.delete-btn:hover {
+	background: #c0392b;
+}
+
+/* Forms */
+form input,
+form select {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #555;
+	border-radius: 5px;
+	background: #29293d;
+	color: white;
+}
+
+form button {
+	background: #ff9f1c;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+form button:hover {
+	background: #e08714;
+}
+
+/* Login Page */
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #1e1e2e;
+}
+
+.login-container {
+	background: #29293d;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container h1 {
+	text-align: center;
+	color: #ff9f1c;
+}
+
+.login-container input {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+}
+
+.login-container button {
+	width: 100%;
+	padding: 10px;
+	background: #ff9f1c;
+	border: none;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.login-container button:hover {
+	background: #e08714;
+}
+/* 🔥 Modal Styling */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto; /* Adjust width based on content */
+	height: auto; /* Adjust height based on content */
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+/* 🔥 Modal Content */
+.modal-content {
+	background: #222;
+	color: #fff;
+	padding: 20px;
+	width: 350px; /* Adjust width */
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* 🔥 Close Button */
+.close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #ccc;
+}
+.close:hover {
+	color: #fff;
+}
+
+/* 🔥 Labels */
+label {
+	display: block;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ccc;
+}
+
+/* 🔥 Ensure input fields take full width */
+input {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: 1px solid #555;
+	background-color: #333;
+	color: #fff;
+	font-size: 14px;
+	outline: none;
+}
+
+/* 🔥 Input Placeholder */
+input::placeholder {
+	color: #bbb;
+}
+
+/* 🔥 Button Container */
+.modal-buttons {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* 🔥 Buttons */
+button {
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+/* 🔥 Save Button */
+.save-btn {
+	background: #28a745;
+	color: white;
+}
+.save-btn:hover {
+	background: #218838;
+}
+
+/* 🔥 Cancel Button */
+.cancel-btn {
+	background: #dc3545;
+	color: white;
+}
+.cancel-btn:hover {
+	background: #c82333;
+}
