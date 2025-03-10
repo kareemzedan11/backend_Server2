@@ -2,7 +2,7 @@ const Admin = require("../models/adminModel");
 const User = require("../models/userModel");
 const Driver = require("../models/driverModel");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require('bcryptjs');
 const { jwtSecret, jwtExpiry } = require("../config/appConfig");
 
 exports.register = async (req, res) => {
