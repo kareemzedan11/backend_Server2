@@ -6,7 +6,7 @@
 		"test": "tests"
 	},
 	"scripts": {
-		"start": "node index.js",
+		"start": "node server.js",
 		"test": "jest",
 		"test:unit": "jest tests/unit",
 		"test:integration": "jest tests/integration"
